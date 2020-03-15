@@ -1,23 +1,25 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Mastery msg="Welcome to Your Vue.js Mastery courses"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Mastery from './components/Mastery.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Mastery
   }
 }
 </script>
 
+<style lang="sass" src="bulma"></style>
+
 <style>
-#app {
+  #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
