@@ -37,7 +37,6 @@
         name: 'Mastery',
         data() {
             return {
-                publicPath: process.env.BASE_URL,
                 languages: [
                     {
                         id: 1,
@@ -71,7 +70,6 @@
                     }
                 });
             },
-
             isBest(language) {
                 let maxVotes = Math.max.apply(Math, this.languages.map(
                         function (item) {
@@ -84,7 +82,10 @@
             }
         },
         props: {
-            msg: String
+            msg: {
+                type: String,
+                required: true
+            }
         }
     }
 </script>
