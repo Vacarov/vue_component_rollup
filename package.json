@@ -5,10 +5,16 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "rollup": "rollup --config build/rollup.config.js"
   },
   "dependencies": {
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@vue/compiler-sfc": "^3.0.0-rc.5",
     "core-js": "^3.6.4",
+    "rollup-plugin-includepaths": "^0.2.3",
+    "rollup-plugin-vue": "^6.0.0-beta.10",
     "vue": "^2.6.11"
   },
   "devDependencies": {
